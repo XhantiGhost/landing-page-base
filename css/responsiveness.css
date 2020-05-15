@@ -1,0 +1,56 @@
+
+@media (max-width: 720px) {
+    :root {
+ /* font sizes */
+
+ --fs-h1: 20px;
+ --fs-h2: 18px;
+ --fs-h3: 16px;
+ --fs-h4: 14px;
+ --fs-body: 13px;
+
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+    }
+}
+
+
+
+@media (max-width: 560px) {
+    .showcase::after {
+        height: 50vh;
+    }
+
+    .content {
+        top: 5%;
+        margin-top: 5px;
+    }
+
+    .content .logo {
+        height: 140px;
+        width: 140px;
+    }
+
+    .content .text {
+        display: none;
+    }
+
+    .grid-3, .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .services div {
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+}

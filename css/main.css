@@ -1,9 +1,69 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* These are just my basic configs */
+
+:root {
+    /* font sizes */
+
+    --fs-h1: 26px;
+    --fs-h2: 23px;
+    --fs-h3: 19px;
+    --fs-h4: 17px;
+    --fs-body: 16px;
+
+
+    /* font weight */
+
+    --fw-reg: 300;
+    --fw-md: 600;
+    --fw-bold: 900;
+
+
+    /* colors */
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-secondary: #ff653f;
+    --clr-accent: #83d37c;
+
+    /* box-shadow: ; */
+
+    --bs: .25em .25em .75rem rgba(0,0,0,.25)
+}
+
 body {
     background: rgba(0,0,0,0.9);
+    color: #f4f4f4;
     margin: 0;
-    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.6;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3{
+    font-size: var(--fs-h3);
+}
+
+strong {font-weight: var(--fw-bold);}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .showcase::after {
     content: '';
@@ -36,7 +96,7 @@ body {
     top: 10%;
     left: 50%;
     margin-top: 105px;
-    margin-left: -145px;
+    margin-left: -130px;
     width: 300px;
     height: 350px;
     text-align: center;
@@ -59,11 +119,29 @@ body {
     margin-top: 1rem;
 }
 
+.btn {
+    padding: 0.5rem 1.5rem;
+    background: #333;
+    color: #f4f4f4;
+    border-radius: 35%;
+    box-shadow: #f4f4f4;
+}
+
+.btn:hover {
+    color: #ff6633;
+}
+
 .container {
     max-width: 960px;
     margin: auto;
     overflow: hidden;
     padding: 4rem 1rem;
+}
+
+.service-title {
+    text-align: center;
+    font-size: var(--fs-h1);
+    margin: 1em 0em;
 }
 
 .grid-3 {
@@ -78,10 +156,26 @@ body {
     grid-gap: 20pz;
 }
 
+.me {
+    display: block;
+    max-width: 100%;
+}
 
 .center {
     text-align: center;
     margin: auto;
+   
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+
+.project-img{
+    display: block;
+    max-width: 100%;
 }
 
 .bg-light {
@@ -103,33 +197,7 @@ footer p {
     margin: 0;
 }
 
-/* media queries */
 
-@media (max-width: 560px) {
-    .showcase::after {
-        height: 50vh;
-    }
+  
 
-    .content {
-        top: 5%;
-        margin-top: 5px;
-    }
 
-    .content .logo {
-        height: 140px;
-        width: 140px;
-    }
-
-    .content .text {
-        display: none;
-    }
-
-    .grid-3, .grid-2 {
-        grid-template-columns: 1fr;
-    }
-
-    .services div {
-        border-bottom: #333 dashed 1px;
-        padding: 1.2rem 1rem;
-    }
-}
