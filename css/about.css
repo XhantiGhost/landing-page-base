@@ -1,0 +1,23 @@
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20pz;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20pz;
+}
+
+.me {
+    display: block;
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+   
+}

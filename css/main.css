@@ -123,7 +123,7 @@ strong {font-weight: var(--fw-bold);}
     padding: 0.5rem 1.5rem;
     background: #333;
     color: #f4f4f4;
-    border-radius: 35%;
+    border-radius: 15%;
     box-shadow: #f4f4f4;
 }
 
@@ -142,40 +142,6 @@ strong {font-weight: var(--fw-bold);}
     text-align: center;
     font-size: var(--fs-h1);
     margin: 1em 0em;
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20pz;
-}
-
-.grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20pz;
-}
-
-.me {
-    display: block;
-    max-width: 100%;
-}
-
-.center {
-    text-align: center;
-    margin: auto;
-   
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-}
-
-.project-img{
-    display: block;
-    max-width: 100%;
 }
 
 .bg-light {
